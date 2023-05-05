@@ -10,13 +10,13 @@ function Experience({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 2.5 }}
-      className="relative flex flex-col items-center h-screen max-w-full px-10 mx-auto overflow-hidden text-left md:flex-row justify-evenly"
+      className="relative mx-auto flex h-screen max-w-full flex-col items-center justify-evenly overflow-hidden px-10 text-left md:flex-row"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-24 text-2xl uppercase tracking-[20px] text-gray-500">
         Experience
       </h3>
 
-      <div className="flex w-full p-10 space-x-5 overflow-x-scroll snap-x snap-mandatory">
+      <div className="flex w-full snap-x snap-mandatory space-x-5 overflow-x-scroll p-10">
         <ExperienceCard />
         <ExperienceCard />
         <ExperienceCard />
