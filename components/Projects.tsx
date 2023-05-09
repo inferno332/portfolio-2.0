@@ -10,24 +10,25 @@ function Projects({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className='relative z-0 flex h-screen max-w-full flex-col items-center justify-evenly overflow-hidden text-left md:flex-row'
+      className='relative z-0 mx-auto flex h-screen max-w-full flex-col items-center justify-evenly overflow-hidden text-left'
     >
       <h3 className='absolute top-24 text-2xl uppercase tracking-[20px] text-gray-500'>
         Projects
       </h3>
 
-      <div className='relative z-20 flex w-full snap-x snap-mandatory overflow-y-hidden overflow-x-scroll'>
+      <div className='carousel relative z-20 flex w-full overflow-hidden'>
         {projects.map((project, i) => (
           <div
-            key={project}
-            className='flex h-screen w-screen flex-shrink-0 snap-center flex-col items-center justify-center space-y-5 p-20 md:p-44'
+            key={i}
+            id={`item${i + 1}`}
+            className='carousel-item flex h-screen w-full flex-col items-center justify-center space-y-5'
           >
             <motion.img
               initial={{ y: -300, opacity: 0 }}
               transition={{ duration: 1.2 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className=''
+              className='p-10 md:p-44'
               src='https://picsum.photos/700/300'
               alt=''
             />
@@ -40,10 +41,23 @@ function Projects({}: Props) {
 
               <p className='text-center text-lg md:text-left'>
                 Learn about data structures and algorithms using a free and
-                open-source web application called
+                open-source web application calledLearn about data structures
+                and algorithms using a free and open-source web application
+                called
               </p>
             </div>
           </div>
+        ))}
+      </div>
+      <div className='flex w-full justify-center gap-2 py-2'>
+        {projects.map((project, i) => (
+          <a
+            key={i}
+            href={`#item${i + 1}`}
+            className='btn-sm btn text-[#F7AB0A]'
+          >
+            {i + 1}
+          </a>
         ))}
       </div>
 
