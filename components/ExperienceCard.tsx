@@ -6,7 +6,7 @@ type Props = {};
 function ExperienceCard({}: Props) {
   return (
     <article
-      className="flex w-[500px] flex-shrink-0 cursor-pointer snap-center flex-col items-center 
+      className="flex w-[500px] cursor-pointer snap-center flex-col items-center 
     space-y-7 overflow-hidden rounded-lg bg-[#292929] p-10 opacity-40 transition-opacity duration-200
     hover:opacity-100 md:w-[600px] xl:w-[900px]"
     >
