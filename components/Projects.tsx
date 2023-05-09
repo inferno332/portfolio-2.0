@@ -28,7 +28,7 @@ function Projects({}: Props) {
               transition={{ duration: 1.2 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className='p-10 md:p-44'
+              className='px-10 md:px-44'
               src='https://picsum.photos/700/300'
               alt=''
             />
@@ -49,7 +49,7 @@ function Projects({}: Props) {
           </div>
         ))}
       </div>
-      <div className='flex w-full justify-center gap-2 py-2'>
+      <div className='flex w-full justify-center gap-2 mb-16'>
         {projects.map((project, i) => (
           <a
             key={i}

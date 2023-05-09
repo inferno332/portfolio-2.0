@@ -10,24 +10,33 @@ function Experience({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 2.5 }}
-      className='relative mx-auto flex h-screen max-w-full flex-col items-center justify- overflow-hidden px-10 text-left'
+      className='relative mx-auto flex h-screen max-w-full flex-col items-center justify-evenly overflow-hidden text-left'
     >
       <h3 className='absolute top-24 text-2xl uppercase tracking-[20px] text-gray-500'>
         Experience
       </h3>
 
-      <div className='carousel w-screen'>
-        <div id='item1' className='carousel-item mx-auto flex w-full justify-center'>
+      <div className='carousel w-screen mt-24'>
+        <div
+          id='item1'
+          className='carousel-item mx-auto flex w-full justify-center'
+        >
           <ExperienceCard />
         </div>
-        <div id='item2' className='carousel-item mx-auto flex w-full justify-center'>
+        <div
+          id='item2'
+          className='carousel-item mx-auto flex w-full justify-center'
+        >
           <ExperienceCard />
         </div>
-        <div id='item3' className='carousel-item mx-auto flex w-full justify-center'>
+        <div
+          id='item3'
+          className='carousel-item mx-auto flex w-full justify-center'
+        >
           <ExperienceCard />
         </div>
       </div>
-      <div className='flex w-full justify-center gap-2 py-2'>
+      <div className='flex w-full justify-center gap-2'>
         <a href='#item1' className='btn-sm btn text-[#F7AB0A]'>
           1
         </a>
