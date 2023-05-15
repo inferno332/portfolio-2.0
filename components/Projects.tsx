@@ -20,7 +20,7 @@ function Projects({}: Props) {
         {projects.map((project, i) => (
           <div
             key={i}
-            id={`item${i + 1}`}
+            id={`project-item${i + 1}`}
             className='carousel-item flex h-screen w-full flex-col items-center justify-center space-y-5'
           >
             <motion.img
@@ -53,7 +53,7 @@ function Projects({}: Props) {
         {projects.map((project, i) => (
           <a
             key={i}
-            href={`#item${i + 1}`}
+            href={`#project-item${i + 1}`}
             className='btn-sm btn text-[#F7AB0A]'
           >
             {i + 1}
