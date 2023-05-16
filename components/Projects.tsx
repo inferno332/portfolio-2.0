@@ -39,7 +39,7 @@ function Projects({}: Props) {
                 </span>
               </h4>
 
-              <p className='text-center text-lg md:text-left'>
+              <p className='text-center text-lg md:text-left px-10 md:px-44'>
                 Learn about data structures and algorithms using a free and
                 open-source web application calledLearn about data structures
                 and algorithms using a free and open-source web application

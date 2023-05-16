@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/vision": "^3.10.3",
     "@types/node": "18.16.1",
     "@types/react": "18.2.0",
     "@types/react-dom": "18.2.1",
@@ -19,17 +21,20 @@
     "eslint-config-next": "13.3.1",
     "framer-motion": "^10.12.4",
     "next": "13.3.1",
+    "next-sanity": "^4.3.2",
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.43.9",
     "react-simple-typewriter": "^5.0.1",
     "react-social-icons": "^5.15.0",
+    "sanity": "^3.10.3",
     "tailwindcss": "3.3.2",
     "typescript": "5.0.4"
   },
   "devDependencies": {
     "prettier": "^2.8.8",
-    "prettier-plugin-tailwindcss": "^0.2.8"
+    "prettier-plugin-tailwindcss": "^0.2.8",
+    "tailwind-scrollbar": "^3.0.4"
   }
 }
