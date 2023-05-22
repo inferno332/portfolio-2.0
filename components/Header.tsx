@@ -41,7 +41,6 @@ function Header({}: Props) {
         />
       </motion.div>
 
-     <Link href='#contact'>
         <motion.div
           initial={{
             x: 500,
@@ -59,12 +58,14 @@ function Header({}: Props) {
             network="email"
             fgColor="gray"
             bgColor="transparent"
+            url="#contact"
           />
+          <Link href='#contact'>
           <p className="hidden text-sm uppercase text-gray-400 md:inline-flex">
             Get In Touch
           </p>
-        </motion.div>
      </Link>
+        </motion.div>
     </header>
   );
 }
